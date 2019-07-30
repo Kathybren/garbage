@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <image src="../../static/img/search.png"/>
+  <view class="search">请输入查询关键字</view>
+</view>
+<view class="card-cont">
+  <view class="card"></view>
+  <view class="card"></view>
+  <view class="card"></view>
+  <view class="card"></view>
+</view>
