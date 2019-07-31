@@ -1,6 +1,18 @@
 <!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
+<view class="search">
+  <view class="search-operate">
+    <image src="../../static/img/search.png" />
+    <input bindinput="bindKeyInput" focus="{{true}}" placeholder="查询垃圾分类" value="{{searchVal}}" confirm-type="search" bindconfirm="search" />
+  </view>
+  <view class="history" hidden="{{searchInfo.sort_list || historyval.length === 0}}" wx:if="{{showHistory}}">
+      <view class="header">
+          <view class="history-text">历史搜索</view><text bindtap="claearAll" class="iconfont iconhebingxingzhuang1"></text>
+      </view>
+      <view class="history-item boder1px" bindtap="searchHistory" data-name="{{item}}" wx:for="{{historyval}}" wx:key="{{item}}">
+          <view class="item">{{item}}</view>
+          <view class="extendClick" catchtap="delete">
+          <text class="iconfont iconshanchu" data-index="{{index}}" ></text>
+          </view>
+      </view>
+    </view>
 </view>

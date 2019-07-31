@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 30rpx;
+  width: 570rpx;
+  height: 60rpx;
+  background: #f7f7fa;
+  border-radius: 30rpx;
+}
+.container image {
+  height: 40rpx;
+  width: 40rpx;
+}
+.container .search {
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+  color: #b0b3ba;
+}
+.card-cont {
+  margin-top: 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card-cont .card {
+  height: 220rpx;
+  width: 160rpx;
+  background: #ccc;
+  margin-bottom: 30rpx;
+}

@@ -3,13 +3,26 @@ const util = require('../../utils/util.js')
 
 Page({
   data: {
-    logs: []
+    searchVal:'',
+    showHistory: []
   },
   onLoad: function () {
-    this.setData({
-      logs: (wx.getStorageSync('logs') || []).map(log => {
-        return util.formatTime(new Date(log))
-      })
-    })
+    
+  },
+  search() {
+    let arr = this.data.historyval;
+    if (arr.indexOf(this.data.searchVal) === -1) {
+      if (arr.length === 30) {
+        arr.pop();
+      }
+      arr.unshift(this.data.searchVal);
+      this.setData({
+        historyval: arr
+      });
+    }
+    this.searchInfo();
+  },
+  searchInfo() {
+
   }
 })

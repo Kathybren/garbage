@@ -1,8 +1,57 @@
-.log-list {
+.search .search-operate {
+  margin: 0 auto;
+  width: 690rpx;
+  height: 60rpx;
+  background: #fbfbfd;
+  border-radius: 30rpx;
   display: flex;
-  flex-direction: column;
-  padding: 40rpx;
+  align-items: center;
 }
-.log-item {
-  margin: 10rpx;
+.search .search-operate text {
+  margin: 0 12rpx 0 22rpx;
+}
+.search .search-operate input {
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+  color: #b0b3ba;
+  width: 586rpx;
+  color: #292A2E;
+}
+.search .search-operate .input-placeholder {
+  color: #B0B3BA;
+}
+.search .search-operate .iconsousuo {
+  color: #B0B3BA;
+  font-size: 40rpx;
+}
+.search .history {
+  padding: 0 30rpx;
+}
+.search .history .header {
+  display: flex;
+  color: #b0b3ba;
+  justify-content: space-between;
+  margin-top: 40rpx;
+}
+.search .history .header text {
+  margin-top: 6rpx;
+}
+.search .history .history-text {
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+}
+.search .history .history-item {
+  display: flex;
+  height: 116rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+.search .history .history-item view {
+  font-size: 32rpx;
+  font-family: PingFangSC-Regular;
+  color: #292a2e;
+}
+.search .history .history-item .iconshanchu {
+  color: #E5E5E8;
+  font-size: 28rpx;
 }
