@@ -4,15 +4,28 @@
     <image src="../../static/img/search.png" />
     <input bindinput="bindKeyInput" focus="{{true}}" placeholder="查询垃圾分类" value="{{searchVal}}" confirm-type="search" bindconfirm="search" />
   </view>
-  <view class="history" hidden="{{searchInfo.sort_list || historyval.length === 0}}" wx:if="{{showHistory}}">
+  <view class="history" wx:if="{{showHistory}}">
       <view class="header">
           <view class="history-text">历史搜索</view><text bindtap="claearAll" class="iconfont iconhebingxingzhuang1"></text>
       </view>
       <view class="history-item boder1px" bindtap="searchHistory" data-name="{{item}}" wx:for="{{historyval}}" wx:key="{{item}}">
           <view class="item">{{item}}</view>
           <view class="extendClick" catchtap="delete">
-          <text class="iconfont iconshanchu" data-index="{{index}}" ></text>
+              <image src="../../static/img/dele.png"/>
+          <!-- <text class="iconfont iconshanchu" data-index="{{index}}" ></text> -->
           </view>
       </view>
+    </view>
+    <view class="cont">
+        <view class="item" wx:for="{{list}}" wx:key="{{index}}">
+            <image wx:if="{{item.type == 1}}" src="../../static/img/wast.png"/> 
+            <image wx:if="{{item.type == 2}}" src="../../static/img/resdit.png"/> 
+            <image wx:if="{{item.type == 3}}" src="../../static/img/cercle.png"/> 
+            <image wx:if="{{item.type == 4}}" src="../../static/img/haza.png"/> 
+            <view>
+                <view class="name">{{item.name}}</view>
+                <view class="subname">{{item.classification}}</view>
+            </view>
+        </view>
     </view>
 </view>

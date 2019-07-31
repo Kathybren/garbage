@@ -17,8 +17,9 @@ const http = ({
   ...other
 } = {}) => {
   return new Promise((resolve, reject) => {
+    console.log(url)
     wx.request({
-      url: 'https://www.kaikia.top/',
+      url: 'https://www.kaikia.top/' + url,
       data: param,
       ...other,
     //   header: {
@@ -34,7 +35,7 @@ const http = ({
     //   },
       success: ({data: res}) => {
         if (res.code === 0) {
-          resolve(res.data)
+          resolve(res)
         } else {
         //   wx.showToast({
         //     title: res.msg,

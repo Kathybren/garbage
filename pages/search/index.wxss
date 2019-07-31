@@ -7,6 +7,10 @@
   display: flex;
   align-items: center;
 }
+.search .search-operate image {
+  height: 40rpx;
+  width: 40rpx;
+}
 .search .search-operate text {
   margin: 0 12rpx 0 22rpx;
 }
@@ -54,4 +58,33 @@
 .search .history .history-item .iconshanchu {
   color: #E5E5E8;
   font-size: 28rpx;
+}
+.search .history .history-item .extendClick image {
+  height: 30rpx;
+  width: 30rpx;
+}
+.search .cont {
+  margin-top: 30rpx;
+}
+.search .cont .item {
+  height: 120rpx;
+  display: flex;
+  margin-bottom: 20rpx;
+  padding: 0 30rpx;
+}
+.search .cont .item image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+}
+.search .cont .item .name {
+  font-size: 30rpx;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+}
+.search .cont .item .subname {
+  font-size: 26rpx;
+  font-family: PingFangSC-Regular;
+  color: #5f6062;
+  margin-top: 12rpx;
 }

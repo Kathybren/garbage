@@ -1,11 +1,22 @@
 <!--index.wxml-->
-<view class="container">
+<view>
+<image class="banner" src="../../static/img/banner.jpg"/>
+</view>
+<view class="container" bindtap="tosearch">
   <image src="../../static/img/search.png"/>
   <view class="search">请输入查询关键字</view>
 </view>
 <view class="card-cont">
-  <view class="card"></view>
-  <view class="card"></view>
-  <view class="card"></view>
-  <view class="card"></view>
+  <view class="card">
+    <image src="../../static/img/resdit.png"/>
+  </view>
+  <view class="card">
+    <image src="../../static/img/wast.png"/>  
+  </view>
+  <view class="card">
+    <image src="../../static/img/cercle.png"/>  
+  </view>
+  <view class="card">
+    <image src="../../static/img/haza.png"/> 
+  </view>
 </view>
