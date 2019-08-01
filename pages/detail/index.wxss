@@ -1,32 +1,57 @@
-.container {
+.containner {
+  padding: 0 30rpx;
+}
+.detail {
   display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  align-items: center;
-  margin-top: 30rpx;
-  width: 570rpx;
-  height: 60rpx;
-  background: #f7f7fa;
-  border-radius: 30rpx;
 }
-.container image {
-  height: 40rpx;
-  width: 40rpx;
+.detail image {
+  height: 140rpx;
+  width: 140rpx;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
 }
-.container .search {
-  font-size: 28rpx;
+.detail .cont {
+  width: 500rpx;
+}
+.detail .cont .name {
+  font-size: 30rpx;
+  font-family: PingFangSC-Medium;
+  font-weight: 520;
+}
+.detail .cont .subname {
+  font-size: 26rpx;
   font-family: PingFangSC-Regular;
-  color: #b0b3ba;
+  color: #5f6062;
+  margin-top: 12rpx;
 }
-.card-cont {
-  margin-top: 30rpx;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.require {
+  height: 80rpx;
+  width: 180rpx;
+  background: #2c2b27;
+  color: white;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 20rpx;
+  font-size: 30rpx;
+  font-family: PingFangSC-Medium;
+  font-weight: 520;
+  margin: 50rpx 0 20rpx 0;
 }
-.card-cont .card {
-  height: 220rpx;
-  width: 160rpx;
-  background: #ccc;
-  margin-bottom: 30rpx;
+.sub {
+  font-size: 26rpx;
+  font-family: PingFangSC-Regular;
+  color: #5f6062;
+  line-height: 44rpx;
+}
+.item .name {
+  width: 210rpx;
+  height: 80rpx;
+  background: #2c2b27;
+  color: white;
+  font-size: 32rpx;
+  font-family: PingFangSC-Semibold;
+  font-weight: 600;
+  line-height: 80rpx;
+  text-align: center;
+  opacity: .4;
 }

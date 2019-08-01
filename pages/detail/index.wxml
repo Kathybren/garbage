@@ -1,11 +1,77 @@
 <!--index.wxml-->
-<view class="container">
-  <image src="../../static/img/search.png"/>
-  <view class="search">请输入查询关键字</view>
+<view class="containner" wx:if="{{type == 1}}">
+  <view class="detail">
+    <image src="../../static/img/resdit.png"/>
+    <view class="cont">
+      <view class="name">干垃圾</view>
+      <view class="subname">即其他垃圾，是指除可回收物、有害垃圾、湿垃圾以外的其它生活废弃物</view>
+    </view>
+  </view>
+  <view class="require">投放要求</view>
+  <view class="sub">1. 尽量沥干水分</view>
+  <view class="sub">2. 难以辨识类别的生活垃圾投入干垃圾容器内</view>
+  <view class="require">常见物品</view>
+  <view>
+    <view class="item">
+      <!-- <image /> -->
+      <view class="name">电灯</view>
+    </view>
+  </view>
 </view>
-<view class="card-cont">
-  <view class="card"></view>
-  <view class="card"></view>
-  <view class="card"></view>
-  <view class="card"></view>
+<view class="containner" wx:if="{{type == 2}}">
+  <view class="detail">
+    <image src="../../static/img/resdit.png"/>
+    <view class="cont">
+      <view class="name">干垃圾</view>
+      <view class="subname">即其他垃圾，是指除可回收物、有害垃圾、湿垃圾以外的其它生活废弃物</view>
+    </view>
+  </view>
+  <view class="require">投放要求</view>
+  <view class="sub">1. 尽量沥干水分</view>
+  <view class="sub">2. 难以辨识类别的生活垃圾投入干垃圾容器内</view>
+  <view class="require">常见物品</view>
+  <view>
+    <view class="item">
+      <!-- <image /> -->
+      <view class="name">电灯</view>
+    </view>
+  </view>
+</view>
+<view class="containner" wx:if="{{type == 3}}">
+  <view class="detail">
+    <image src="../../static/img/resdit.png"/>
+    <view class="cont">
+      <view class="name">干垃圾</view>
+      <view class="subname">即其他垃圾，是指除可回收物、有害垃圾、湿垃圾以外的其它生活废弃物</view>
+    </view>
+  </view>
+  <view class="require">投放要求</view>
+  <view class="sub">1. 尽量沥干水分</view>
+  <view class="sub">2. 难以辨识类别的生活垃圾投入干垃圾容器内</view>
+  <view class="require">常见物品</view>
+  <view>
+    <view class="item">
+      <!-- <image /> -->
+      <view class="name">电灯</view>
+    </view>
+  </view>
+</view>
+<view class="containner" wx:if="{{type == 4}}">
+  <view class="detail">
+    <image src="../../static/img/resdit.png"/>
+    <view class="cont">
+      <view class="name">干垃圾</view>
+      <view class="subname">即其他垃圾，是指除可回收物、有害垃圾、湿垃圾以外的其它生活废弃物</view>
+    </view>
+  </view>
+  <view class="require">投放要求</view>
+  <view class="sub">1. 尽量沥干水分</view>
+  <view class="sub">2. 难以辨识类别的生活垃圾投入干垃圾容器内</view>
+  <view class="require">常见物品</view>
+  <view>
+    <view class="item">
+      <!-- <image /> -->
+      <view class="name">电灯</view>
+    </view>
+  </view>
 </view>

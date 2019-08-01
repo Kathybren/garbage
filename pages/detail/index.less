@@ -1,35 +1,74 @@
-.container {
+.containner{
+    padding: 0 30rpx;
+}
+.detail {
     display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    align-items: center;
-    margin-top: 30rpx;
-    width: 570rpx;
-    height: 60rpx;
-    background: rgba(247, 247, 250, 1);
-    border-radius: 30rpx;
 
     image {
-        height: 40rpx;
-        width: 40rpx;
+        height: 140rpx;
+        width: 140rpx;
+        border-radius: 10rpx;
+        margin-right: 20rpx;
+    }
+    .cont{
+        width: 500rpx;
+        .name{
+            font-size:30rpx;
+            font-family:PingFangSC-Medium;
+            font-weight:520;
+        }
+        .subname{
+            font-size:26rpx;
+            font-family:PingFangSC-Regular;
+            color:rgba(95,96,98,1);
+            margin-top: 12rpx;
+        }
     }
 
-    .search {
-
-        font-size: 28rpx;
-        font-family: PingFangSC-Regular;
-        color: rgba(176, 179, 186, 1);
-    }
 }
-.card-cont{
-    margin-top: 30rpx;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    .card{
-        height: 220rpx;
-        width: 160rpx;
-        background: #ccc;
-        margin-bottom: 30rpx;
+.require{
+    height: 80rpx;
+    width: 180rpx;
+    background: #2c2b27;
+    color: white;
+    line-height: 80rpx;
+    text-align: center;
+    border-radius: 20rpx;
+    font-size:30rpx;
+    font-family:PingFangSC-Medium;
+    font-weight:520;
+    margin: 50rpx 0 20rpx 0;
+}
+.sub{
+    font-size:26rpx;
+    font-family:PingFangSC-Regular;
+    color:rgba(95,96,98,1);
+    line-height: 44rpx;
+}
+.item{
+    // height: 300rpx;
+    //     width: 210rpx;
+    //     position: relative;
+    //     border-radius: 10rpx;
+    //     overflow: hidden;
+    // image{
+    //     height: 200rpx;
+    //     width: 210rpx;
+    //     background: #ccc;
+    // }
+    .name{
+        // position: absolute;
+        // left: 0;
+        // bottom: 0;
+        width: 210rpx;
+        height: 80rpx;
+        background: #2c2b27;
+        color: white;
+        font-size:32rpx;
+        font-family:PingFangSC-Semibold;
+        font-weight:600;
+        line-height: 80rpx;
+        text-align: center;
+        opacity: .4;
     }
 }
