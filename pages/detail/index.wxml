@@ -1,23 +1,4 @@
 <!--index.wxml-->
-<view class="containner" wx:if="{{type == 1}}">
-  <view class="detail">
-    <image src="../../static/img/resdit.png"/>
-    <view class="cont">
-      <view class="name">干垃圾</view>
-      <view class="subname">即其他垃圾，是指除可回收物、有害垃圾、湿垃圾以外的其它生活废弃物</view>
-    </view>
-  </view>
-  <view class="require">投放要求</view>
-  <view class="sub">1. 尽量沥干水分</view>
-  <view class="sub">2. 难以辨识类别的生活垃圾投入干垃圾容器内</view>
-  <view class="require">常见物品</view>
-  <view>
-    <view class="item">
-      <!-- <image /> -->
-      <view class="name">电灯</view>
-    </view>
-  </view>
-</view>
 <view class="containner" wx:if="{{type == 2}}">
   <view class="detail">
     <image src="../../static/img/resdit.png"/>
@@ -33,45 +14,67 @@
   <view>
     <view class="item">
       <!-- <image /> -->
-      <view class="name">电灯</view>
+      <view class="name" wx:for="{{gan}}" wx:key="{{index}}">{{item}}</view>
+    </view>
+  </view>
+</view>
+<view class="containner" wx:if="{{type == 1}}">
+  <view class="detail">
+    <image src="../../static/img/wast.png"/>
+    <view class="cont">
+      <view class="name">湿垃圾</view>
+      <view class="subname">即易腐垃圾，是指食物肥料、剩菜剩饭、过期食品、瓜皮果核、花卉绿植等易腐的生活废弃物。</view>
+    </view>
+  </view>
+  <view class="require require1">投放要求</view>
+  <view class="sub">1. 纯流质的食物垃圾、如牛奶等，应直接倒进下水口</view>
+  <view class="sub">2. 有包装物的湿垃圾应将包装物去除后分类投放、包装物请投放到对应的可回收物或干垃圾容器</view>
+  <view class="require require1">常见物品</view>
+  <view>
+    <view class="item">
+      <!-- <image /> -->
+      <view class="name" wx:for="{{shi}}" wx:key="{{index}}">{{item}}</view>
     </view>
   </view>
 </view>
 <view class="containner" wx:if="{{type == 3}}">
   <view class="detail">
-    <image src="../../static/img/resdit.png"/>
+    <image src="../../static/img/cercle.png"/>
     <view class="cont">
-      <view class="name">干垃圾</view>
-      <view class="subname">即其他垃圾，是指除可回收物、有害垃圾、湿垃圾以外的其它生活废弃物</view>
+      <view class="name">可回收物</view>
+      <view class="subname">即废纸张、废塑料、废玻璃制品、废金属、废织物等适宜回收、可循环利用的生活废弃物</view>
     </view>
   </view>
-  <view class="require">投放要求</view>
-  <view class="sub">1. 尽量沥干水分</view>
-  <view class="sub">2. 难以辨识类别的生活垃圾投入干垃圾容器内</view>
-  <view class="require">常见物品</view>
+  <view class="require require2">投放要求</view>
+  <view class="sub">1. 轻投轻放</view>
+  <view class="sub">2. 清洁干燥，避免污染，费纸尽量平整</view>
+  <view class="sub">3. 立体包装物请清空内容物，清洁后压扁投放</view>
+  <view class="sub">4. 有尖锐边角的、应包裹后投放</view>
+  <view class="require require2">常见物品</view>
   <view>
     <view class="item">
       <!-- <image /> -->
-      <view class="name">电灯</view>
+      <view class="name" wx:for="{{cre}}" wx:key="{{index}}">{{item}}</view>
     </view>
   </view>
 </view>
 <view class="containner" wx:if="{{type == 4}}">
   <view class="detail">
-    <image src="../../static/img/resdit.png"/>
+    <image src="../../static/img/haza.png"/>
     <view class="cont">
-      <view class="name">干垃圾</view>
-      <view class="subname">即其他垃圾，是指除可回收物、有害垃圾、湿垃圾以外的其它生活废弃物</view>
+      <view class="name">有害垃圾</view>
+      <view class="subname">即废电池、废灯管、废药品、废油漆及其容器等对人体健康或者自然环境造成直接或者潜在危害的生活废弃物</view>
     </view>
   </view>
-  <view class="require">投放要求</view>
-  <view class="sub">1. 尽量沥干水分</view>
-  <view class="sub">2. 难以辨识类别的生活垃圾投入干垃圾容器内</view>
-  <view class="require">常见物品</view>
+  <view class="require require3">投放要求</view>
+  <view class="sub">1. 投放时请注意轻放</view>
+  <view class="sub">2. 易破损的请连带包装或包裹后轻放</view>
+  <view class="sub">3. 如易挥发，请密封后投放</view>
+  <view class="require require3">常见物品</view>
   <view>
     <view class="item">
       <!-- <image /> -->
-      <view class="name">电灯</view>
+      <view class="name" wx:for="{{du}}" wx:key="{{index}}">{{item}}</view>
     </view>
   </view>
 </view>

@@ -12,6 +12,7 @@
   height: 60rpx;
   background: #f7f7fa;
   border-radius: 30rpx;
+  margin-bottom: 30rpx;
 }
 .container image {
   height: 40rpx;
@@ -22,18 +23,38 @@
   font-family: PingFangSC-Regular;
   color: #b0b3ba;
 }
+.type {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 40rpx;
+  margin-top: 80rpx;
+}
+.type .line {
+  width: 180rpx;
+  height: 4rpx;
+  background: #4cbb3f;
+}
+.type .text {
+  margin: 0 20rpx;
+  font-size: 40rpx;
+  font-family: PingFangSC-Regular;
+  color: #292a2e;
+}
 .card-cont {
   margin-top: 30rpx;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 0 40rpx;
 }
 .card-cont .card {
-  height: 149rpx;
-  width: 149rpx;
+  height: 199rpx;
+  width: 199rpx;
   margin-bottom: 30rpx;
 }
 .card-cont .card image {
-  height: 149rpx;
-  width: 149rpx;
+  height: 179rpx;
+  width: 179rpx;
 }

@@ -76,6 +76,7 @@
   width: 100rpx;
   height: 100rpx;
   margin-right: 20rpx;
+  border-radius: 6rpx;
 }
 .search .cont .item .name {
   font-size: 30rpx;

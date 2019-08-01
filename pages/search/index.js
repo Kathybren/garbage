@@ -43,6 +43,12 @@ Page({
       this.setData({list: res.info, showHistory: false})
     })
   },
+  todetail(e) {
+    let type = e.currentTarget.dataset.type
+    wx.navigateTo({
+      url: `../detail/index?type=${type}`
+    })
+  },
   // 删除历史记录
   delete(e) {
     let arr = this.data.historyval;

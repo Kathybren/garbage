@@ -17,7 +17,7 @@
       </view>
     </view>
     <view class="cont">
-        <view class="item" wx:for="{{list}}" wx:key="{{index}}">
+        <view class="item" wx:for="{{list}}" wx:key="{{index}}" bindtap="todetail" data-type="{{item.type}}">
             <image wx:if="{{item.type == 1}}" src="../../static/img/wast.png"/> 
             <image wx:if="{{item.type == 2}}" src="../../static/img/resdit.png"/> 
             <image wx:if="{{item.type == 3}}" src="../../static/img/cercle.png"/> 

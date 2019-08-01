@@ -43,6 +43,12 @@ Page({
       })
     }
   },
+  toDetail(e) {
+    let type = e.currentTarget.dataset.type
+    wx.navigateTo({
+      url: `../detail/index?type=${type}`
+    })
+  },
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo

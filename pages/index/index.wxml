@@ -6,17 +6,24 @@
   <image src="../../static/img/search.png"/>
   <view class="search">请输入查询关键字</view>
 </view>
-<view class="card-cont">
-  <view class="card">
+<view class="type">
+  <view class="line"></view>
+  <view class="text">分类标识</view>
+  <view class="line"></view>
+</view>
+<view class="card-cont" style="margin-top:60rpx">
+  <view class="card" bindtap="toDetail" data-type="2">
     <image src="../../static/img/resdit.png"/>
   </view>
-  <view class="card">
+  <view class="card" bindtap="toDetail" data-type="1">
     <image src="../../static/img/wast.png"/>  
   </view>
-  <view class="card">
+</view>
+<view class="card-cont">
+  <view class="card" bindtap="toDetail" data-type="3">
     <image src="../../static/img/cercle.png"/>  
   </view>
-  <view class="card">
+  <view class="card" bindtap="toDetail" data-type="4">
     <image src="../../static/img/haza.png"/> 
   </view>
 </view>
