@@ -56,5 +56,8 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+  onShareAppMessage: function () {
+    // 页面被用户分享时执行
+  },
 })

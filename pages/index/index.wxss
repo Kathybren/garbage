@@ -55,6 +55,7 @@
   margin-bottom: 30rpx;
 }
 .card-cont .card image {
-  height: 179rpx;
-  width: 179rpx;
+  height: 189rpx;
+  width: 189rpx;
+  border-radius: 20rpx;
 }
